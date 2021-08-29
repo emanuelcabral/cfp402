@@ -1,0 +1,228 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.a1{
+    min-height: 100px;
+    width: 100%;
+    background: #478829;
+    box-shadow: 2px 2px 20px #000;
+    border-bottom: 2px solid #000;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.a1 img{
+    float: left;
+    height: 95px;
+}
+
+.a1 nav{
+    float: right;
+}
+.a1 li a{
+    text-decoration: none;
+    color: #f7fe39;
+}
+
+.a1 ul{
+    display: flex;
+    color: #f7fe39;
+}
+
+.a1 li{
+    padding: 20px;
+    list-style: none;
+    font-family: fantasy;
+    font-size: 25px;
+    margin: auto;
+}
+.a1 li a:hover{
+    text-decoration: underline #000 dashed;
+    cursor: pointer;
+    transform: scale(1.2);
+    color: #f2ac21;
+    transition: 0.7s;
+}
+marquee{
+    height: 50px;
+    background: #9df324;
+    font: 30px iceberg, arial;
+    color: #f32424;
+    line-height: 50px;
+    text-shadow: 2px 2px 20px #000;
+}
+.portada{
+    width: 100%;
+    background: #24f3d7;
+    color: #fff;
+    text-align: center;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.portada #img1{
+    width: 100%;
+    position: relative;
+}
+.portada #img2{
+    position: absolute;
+    width: 100%;
+    text-align: center;
+    left: 0;
+    top: 100;
+    
+}
+
+/*section cursos*/
+.titulos{
+    height: 80px;
+    width: 100%;
+    background: #478829;
+    text-align: center;
+    font: 40px Ficticcia College, arial;
+    color: #ffffff;
+    text-shadow: 2px 2px 20px #000;
+    line-height: 80px;
+    
+}
+.titulos span{
+    color: #f7fe39;
+}
+.contenedor{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+.curson{
+    min-width: 200px;
+    width: 30%;
+    height: auto;
+/*    height: 400px;*/
+    background: #4f544f;
+    border: 5px dashed #f7fe39;
+    flex-grow: 1;
+/*    margin: 10px;*/
+    
+}
+
+@media(max-width:600px){
+    .curson{
+        width:100%;
+     }
+}
+
+.curson h1{
+    width: 100%;
+    text-align: center;
+    color: #fff;
+    background: #1e5fe0;
+    font: 30px Kube Vertiko, arial;
+}
+.curson img{
+    width: 100%;
+    min-height: 150px;
+    background: #b8f037;
+}
+.curson p{
+    width: 100%;
+    padding: 7%;
+    color: #fff;
+    font: 18px iceberg;
+    
+}
+/*section contacto*/
+@media(max-width:600px){
+    #cont-maps{
+        width: 100%;
+    }
+    #cont-form{
+        width: 100%;
+    }
+}
+
+#cont-form{
+    width: 50%;
+    height: 580px;
+    background: #12b0c8;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    min-width: 300px;
+    flex-grow: 1;
+    
+}
+#cont-form h3{
+    font: 40px cursive;
+}
+#cont-form form{
+    width: 80%;
+    text-align: center;
+}
+#cont-form input, textarea{
+    width: 100%;
+    margin: 2%;
+}
+#cont-form button{
+    padding: 5px;
+}
+#cont-form button:hover{
+    cursor: pointer;
+    background: #2c70dc;
+    color: #fff;
+    transition: 0.8s;
+}
+#cont-maps{
+    width: 50%;
+    height: 580px;
+    background: #12c830;
+    background-image: url(img/s1.jpg);
+    background-position: bottom;
+    filter: grayscale(1);
+    min-width: 300px;
+    flex-grow: 1;
+    display: flex;
+}
+#cont-maps iframe{
+    margin: auto;
+}
+/*section footer*/
+footer{
+    width: 100%;
+    min-height: 150px;
+    background: #000000;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+#f1{
+    width: 60%;
+    padding: 2%;
+}
+#f1 h5{
+    text-align: center;
+    color: #fff;
+    font-size: 15px;
+    font-family: arial;
+    font-weight:100;
+}
+#f1 h5 span a{
+    text-decoration: none;
+    color: #a91d18;
+}
+#f1 h5 span a:hover{
+    cursor: pointer;
+    color: #fff000;
+    transition: 0.5s;
+}
+#f2{
+    width: 20%;
+    height: 150px;
+    min-width: 200px;
+}
+#f2 img{
+    height: 110px;
+}
